@@ -1,1 +1,1 @@
-Predict song download numbers given artist name and/or song title
+Predict song download numbers for given artist name(s) and/or song title(s)
