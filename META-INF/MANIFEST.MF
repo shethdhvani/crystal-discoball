@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0 (Sun Microsystems Inc.)
+Main-Class: neu.pdpmr.project.Model
+Class-Path: lib/spark-sql_2.11-2.2.0.jar lib/spark-core_2.11-2.2.0.jar lib/spark-mllib_2.11-2.2.0.jar
+
