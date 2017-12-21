@@ -91,7 +91,7 @@ object Model {
 
     val featureData = spark.sparkContext.parallelize(featureBuffer)
     val testingData = featureData.map(row => {
-      Vectors.dense(row(3).toDouble, row(1).toDouble, row(0).toDouble, row(2).toDouble)
+      Vectors.dense(row(0).toDouble, row(1).toDouble, row(2).toDouble, row(3).toDouble)
     }
     )
 
@@ -211,7 +211,7 @@ object Model {
 
   // helper method to to transform feature array into Row
   def getRowFromArray(arr: Array[String]): Row = {
-    Row(arr(0), arr(1), arr(2), arr(3), arr(4), arr(5))
+    Row(arr(0), arr(1), arr(9), arr(3), arr(2), arr(8))
   }
 
   // helper method to transform averages array into Row
